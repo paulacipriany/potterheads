@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Harry Potter, Filmes, Livros, Personagens, Wiki, Fanbase">
     <meta name="description" content="Site sobre as locaçoes do universo Harry Potter">
 
-    <title>Harry Potter - Home</title>
+    <title>Harry Potter - Local</title>
 </head>
+
 <body>
 
     <header id="header">
@@ -18,10 +20,10 @@
         </div>
         <nav class="menu">
             <ul>
-                <li class="active">
+                <li>
                     <a href="index.html">Home</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="mapa.html">Mapa</a>
                 </li>
                 <li>
@@ -38,27 +40,44 @@
     </header>
 
     <main>
+        <section id="banner">
+            <img src="img/banner-mapa-detalhe.png" alt="Imagem do local">
+        </section>
+        <section id="info">
+            <div>
+                <h1>King's Cross Station</h1>
+                <strong>Plataforma 9¾</strong><br />
+                <span>Euston Rd., London N1 9AL, Reino Unido</span><br />
+                <a href="single-filme.html">Harry Potter e a Pedra Filosofal</a>
+            </div>
+            <p>A estação King's Cross em Londres foi escolhida como local para a estação ferroviária Hogwarts Express. Parte da parede dela, entre as plataformas 4 e 5, foi utilizada para filmar as cenas em que Harry e seu grupo atravessam magicamente a barreira de tijolos para chegar até Hogwarts Express. Agora, no local de filmagem, um carrinho de bagagem parece desaparecer magicamente em uma parede embaixo de uma placa da Plataforma 9 ¾, oferecendo aos fãs uma opção fotográfica.</p>
+        </section>
 
-        <section id="slider">
-            <div class="slide">
-                <img src="img/banner.png" alt="Imagem Piccadilly Circus">
-                <div class="info">
-                    <a href="mapa-local.html">
-                        <strong>Piccadily Circus</strong><br />
-                        Londres WIJ 9HP, Reino Unido<br />
-                        <span>Harry Potter e as Relíquias da Morte I</span>
-                    </a>
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582284.298941974!2d-15.020883926043918!3d54.10167163173951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1695417571423!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="endereco">
+                    <p><b>Estação King’s Cross:</b><br />
+                    Euston Rd., London N1 9AL - Londres, Reino Unido.</p>
+                    <a href="maps.google.com">Acesse o mapa</a>
                 </div>
+        </section>
+
+        <section id="cena">
+            <h3>Cena do filme</h3>
+            <img src="img/cena-mapa-detalhe.png" alt="Cena do filme" /> 
+            <div class="detalhes">
+                <a href="single-filme.html">Harry Potter e a Pedra FIlosofal</a><br />
+                <b>Harry conhece a Plataforma 9¾</b>
+                <p>Nesta cena, Hagrid acompanha Harry até a estação King’s Cross, deixando-o com instruções para chegar até a Plataforma 9 ¾. Com a ajuda da Sra. Weasley, ele acha a plataforma e embarca no Expresso Hogwarts.</p>
             </div>
         </section>
 
-        <section id="inicio">
-            <h1>Descubra os cenários do universo Harry Potter</h1>
-            <img src="img/seta.png" alt="Seta para baixo">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582284.298941974!2d-15.020883926043918!3d54.10167163173951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1695417571423!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
         <section id="personagens">
+            <h4>Personagens da cena</h4>
             <div class="item">
                 <a href="single-personagem.html">
                     <img src="img/personagem-01.png" alt="Foto do personagem">
@@ -128,4 +147,5 @@
     </footer>
 
 </body>
+
 </html>
