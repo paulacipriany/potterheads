@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Harry Potter, Filmes, Livros, Personagens, Wiki, Fanbase">
     <meta name="description" content="Site sobre as locaçoes do universo Harry Potter">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilo.css">
 
     <title>Harry Potter - Home</title>
 </head>
@@ -54,76 +60,86 @@
 
         <section id="inicio">
             <h1>Descubra os cenários do universo Harry Potter</h1>
-            <img src="img/seta.png" alt="Seta para baixo">
+            <img class="seta" src="img/seta.png" alt="Seta para baixo">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582284.298941974!2d-15.020883926043918!3d54.10167163173951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1695417571423!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section id="personagens">
-            <div class="item">
-                <a href="single-personagem.html">
-                    <img src="img/personagem-01.png" alt="Foto do personagem">
-                    <span>Harry Potter</span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="single-personagem.html">
-                    <img src="img/personagem-02.png" alt="Foto do personagem">
-                    <span>Luna Lovegood</span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="single-personagem.html">
-                    <img src="img/personagem-03.png" alt="Foto do personagem">
-                    <span>Severus Snape</span>
-                </a>
+            <h2>Personagens</h2>
+            <div class="wrapper">
+                <div class="item">
+                    <a href="single-personagem.html">
+                        <img src="img/personagem-01.png" alt="Foto do personagem">
+                        <span>Harry Potter</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="single-personagem.html">
+                        <img src="img/personagem-02.png" alt="Foto do personagem">
+                        <span>Luna Lovegood</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="single-personagem.html">
+                        <img src="img/personagem-03.png" alt="Foto do personagem">
+                        <span>Severus Snape</span>
+                    </a>
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer id="footer">
+        <div class="wrapper">
+            <ul class="links">
+                <li>
+                    <a href="mapa.html">Mapa</a>
+                    <ul>
+                        <li><a href="mapa-local.html">Piccadilly Circus</a></li>
+                        <li><a href="mapa-local.html">Millenium Bridge</a></li>
+                        <li><a href="mapa-local.html">London Eye</a></li>
+                        <li><a href="mapa-local.html">King's Cross Station</a></li>
+                        <li><a href="mapa-local.html">Liverpool</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-        <ul class="links">
-            <li>
-                <a href="mapa.html">Mapa</a>
-                <ul>
-                    <li><a href="mapa-local.html">Piccadilly Circus</a></li>
-                    <li><a href="mapa-local.html">Millenium Bridge</a></li>
-                    <li><a href="mapa-local.html">London Eye</a></li>
-                    <li><a href="mapa-local.html">King's Cross Station</a></li>
-                    <li><a href="mapa-local.html">Liverpool</a></li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="links">
+                <li>
+                    <a href="personagens.html">Personagens</a>
+                    <ul>
+                        <li><a href="single-personagem.html">Harry Potter</a></li>
+                        <li><a href="single-personagem.html">Hermione Granger</a></li>
+                        <li><a href="single-personagem.html">Ronald Weasley</a></li>
+                        <li><a href="single-personagem.html">Neville Longbottom</a></li>
+                        <li><a href="single-personagem.html">Luna Lovegood</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-        <ul class="links">
-            <li>
-                <a href="personagens.html">Personagens</a>
-                <ul>
-                    <li><a href="single-personagens.html">Harry Potter</a></li>
-                    <li><a href="single-personagens.html">Hermione Granger</a></li>
-                    <li><a href="single-personagens.html">Ronald Weasley</a></li>
-                    <li><a href="single-personagens.html">Neville Longbottom</a></li>
-                    <li><a href="single-personagens.html">Luna Lovegood</a></li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="links">
+                <li>
+                    <a href="filmes.html">Filmes</a>
+                    <ul>
+                        <li><a href="single-filme.html">HP e a Pedra Filosofal</a></li>
+                        <li><a href="single-filme.html">HP e a Camara Secreta</a></li>
+                        <li><a href="single-filme.html">HP e o Prisioneiro de Azkaban</a></li>
+                        <li><a href="single-filme.html">HP e o Cálice de Fogo</a></li>
+                        <li><a href="single-filme.html">HP e a Ordem da Fenix</a></li>
+                        <li><a href="single-filme.html">HP e o Enigma do Príncipe</a></li>
+                        <li><a href="single-filme.html">HP e as Relíquias da Morte I</a></li>
+                        <li><a href="single-filme.html">HP e as Relíquias da Morte II</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-        <ul class="links">
-            <li>
-                <a href="filmes.html">Filmes</a>
-                <ul>
-                    <li><a href="single-filme.html">HP e a Pedra Filosofal</a></li>
-                    <li><a href="single-filme.html">HP e a Camara Secreta</a></li>
-                    <li><a href="single-filme.html">HP e o Prisioneiro de Azkaban</a></li>
-                    <li><a href="single-filme.html">HP e o Cálice de Fogo</a></li>
-                    <li><a href="single-filme.html">HP e a Ordem da Fenix</a></li>
-                    <li><a href="single-filme.html">HP e o Enigma do Príncipe</a></li>
-                    <li><a href="single-filme.html">HP e as Relíquias da Morte I</a></li>
-                    <li><a href="single-filme.html">HP e as Relíquias da Morte II</a></li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="links">
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
 
     </footer>
 

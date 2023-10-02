@@ -1,0 +1,422 @@
+/*** GERAL ***/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black url(img/bg.png) repeat center center;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+#header .menu, #footer .wrapper, #slider, #inicio, #personagens, #mapa, #lista, #banner, #info, #localizacao, #cena, #intro, #bio, #locais, #filmes, #contato{
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+#banner img{ width: 100%; }
+
+/*** HEADER ***/
+#header{
+    background-image: linear-gradient(to bottom, #1C293A, transparent);
+    border-top: 4px solid white;
+    font-family: 'Inter', sans-serif;
+    height: 200px;
+    padding: 50px 0 0;
+}
+#header .logo{
+    margin-bottom: 40px;
+    text-align: center;
+}
+#header .logo a{ display: inline-block; }
+#header .menu{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#header .menu ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#header .menu li{ display: inline-block; }
+#header .menu a{
+    color: white;
+    text-decoration: none;
+}
+#header .menu a:hover{ color: #F2DA59; }
+#header .menu .active a{ color: #F2DA59; }
+
+/*** FOOTER ***/
+#footer{
+    background-image: linear-gradient(to top, #1C293A, transparent);
+    font-size: 16px;
+    padding: 80px 0 40px;
+}
+#footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#footer ul.links{
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+}
+#footer ul.links li{ line-height: 28px; }
+#footer ul.links li ul{
+    font-weight: 500;
+    list-style: none;
+    margin-left: 20px;
+    text-transform: initial;
+}
+#footer ul.links a{ color: white; }
+#footer ul.links a:hover{ color: #F2DA59; }
+
+/*** HOMEPAGE ***/
+#slider{ height: 330px; }
+#slider .slide{
+    background: black;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+}
+#slider .slide img{
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+}
+#slider .slide .info{
+    font-size: 30px;
+    font-weight: 600;
+    left: 40px;
+    line-height: 38px;
+    position: absolute;
+    top: 50%;
+}
+#slider .slide .info a{
+    color: white;
+    text-decoration: none;
+}
+#slider .slide .info a:hover{ color: #F2DA59; }
+#slider .slide .info strong{
+    font-size: 36px;
+    font-weight: 900;
+}
+#slider .slide .info span{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#inicio{
+    padding: 60px 0;
+    text-align: center;
+}
+#inicio h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0 auto 30px auto;
+    max-width: 35rem;
+}
+#inicio img.seta{
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+/*** MAPA ***/
+#mapa{
+    padding: 60px 0 40px;
+    text-align: center;
+}
+#mapa h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+#mapa p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+#lista{ padding: 40px 0 60px; }
+#lista h2{
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#lista p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+#lista .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#lista ul{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+}
+#lista ul li a{ color: white; }
+#lista ul li a:hover{ color: #F2DA59; }
+
+#info{ padding: 20px 0 0; }
+#info h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+#info strong{
+    font-size: 32px;
+    font-weight: 900;
+}
+#info span{
+    font-size: 26px;
+    font-weight: 600;
+}
+#info a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#info a:hover{ text-decoration: none; }
+#info p{
+    font-size: 20px;
+    line-height: 28px;
+    margin: 30px 0 60px;
+}
+
+#localizacao{ padding: 20px 0; }
+#localizacao h2{
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#localizacao .endereco{
+    margin-top: 20px;
+}
+#localizacao .endereco p{
+    font-size: 22px;
+    line-height: 30px;
+}
+#localizacao .endereco a{
+    color: white;
+    font-size: 19px;
+    text-transform: lowercase;
+}
+#localizacao .endereco a:hover{ text-decoration: none; }
+
+#cena{ padding: 20px 0; }
+#cena h3{
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#cena img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+#cena .detalhes{
+    font-size: 20px;
+    line-height: 36px;
+}
+#cena .detalhes a{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+#cena .detalhes a:hover{ text-decoration: none; }
+
+/*** PERSONAGENS ***/
+#personagens{
+    padding: 40px 0;
+    text-align: center;
+}
+#personagens h2, #personagens h4{
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#personagens .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#personagens .item{
+    text-align: center;
+    width: 30%;
+}
+#personagens .item a{
+    color: white;
+    display: block;
+}
+#personagens .item img{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#personagens .item span{
+    font-size: 20px;
+    font-weight: 600;
+}
+#personagens .item a:hover{
+    color: #F2DA59;
+    text-decoration: none;
+}
+#personagens .item a:hover img{ opacity: 0.8; }
+
+#personagens.page{ text-align: left; }
+#personagens.page h2{ font-size: 28px; text-align: left; }
+#personagens.page .wrapper{ flex-wrap: wrap; }
+#personagens.page .item{ margin-bottom: 30px;}
+
+#intro{
+    padding: 20px 0;
+}
+#intro h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#intro p{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#bio{ padding: 40px 0; }
+#bio h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#bio p{
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#locais{
+    clear: both;
+    padding: 20px 0;
+}
+#locais h2{
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#locais .item{
+    clear: both;
+    margin-bottom: 40px;
+}
+#locais .item .imagem{
+    display: inline-block;
+    margin-right: 2%;
+    width: 30%;
+}
+#locais .item .imagem a{ display: block; }
+#locais .item .imagem img{ width: 100%; }
+#locais .item .detalhes{
+    float: right;
+    width: 68%;
+}
+#locais .item .detalhes p{
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+#locais .item .detalhes strong{
+    font-size: 26px;
+    text-decoration: underline;
+}
+#locais .item .detalhes a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#locais .item .detalhes a:hover{
+    color: #F2DA59;
+    text-decoration: none;
+}
+
+/*** FILMES ***/
+#intro.filme{ text-align: center; }
+
+#filmes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#filmes .item{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 30%;
+}
+#filmes .item .imagem{
+    display: block;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#filmes .item img{ width: 100%; }
+#filmes .item a{ color: white; }
+#filmes .item a:hover{
+    color: #F2DA59;
+    text-decoration: none;
+}
+
+#info.filme{ clear: both; }
+#info.filme img{ float: left; width: 23%; }
+#info.filme p{ float: right; margin: 0; width: 75%; }
+
+/*** CONTATO ***/
+#contato{
+    padding: 40px 0 60px;
+}
+#contato h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#contato p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+#formcontato{
+    font-family: 'Lexend', sans-serif;
+}
+#formcontato input, #formcontato textarea{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    box-shadow: transparent;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+#formcontato input{
+    height: 30px;
+    margin-right: 5%;
+    width: 28%;
+}
+#formcontato textarea{
+    width: 100%;
+}
+#formcontato input::placeholder, #formcontato textarea::placeholder{ color: white; }
+#formcontato input[type=submit]{
+    border: 1px solid white;
+    cursor: pointer;
+    height: auto;
+    padding: 8px 30px;
+    width: auto;
+}
