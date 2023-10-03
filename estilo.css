@@ -10,7 +10,7 @@ body{
     font-family: 'Lexend', sans-serif;
 }
 
-a{
+a:hover{
     transition: color 5s;
 }
 
