@@ -9,6 +9,11 @@ body{
     color: white;
     font-family: 'Lexend', sans-serif;
 }
+
+a{
+    transition: color 5s;
+}
+
 #header .menu, #footer .wrapper, #slider, #inicio, #personagens, #mapa, #lista, #banner, #info, #localizacao, #cena, #intro, #bio, #locais, #filmes, #contato{
     margin: 0 auto;
     max-width: 70rem;
