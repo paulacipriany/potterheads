@@ -11,10 +11,10 @@ body{
 }
 
 a:hover{
-    transition: color 3s;
+    transition: color 2s;
 }
 
-#header .menu, #footer .wrapper, #slider, #inicio, #personagens, #mapa, #lista, #banner, #info, #localizacao, #cena, #intro, #bio, #locais, #filmes, #contato{
+#header .menu, #footer .wrapper, #mapa, #lista, #banner, #info, #localizacao, #cena, #intro, #bio, #locais, #filmes, #contato{
     margin: 0 auto;
     max-width: 70rem;
 }
@@ -78,10 +78,25 @@ a:hover{
 #footer ul.links a:hover{ color: #F2DA59; }
 
 /*** HOMEPAGE ***/
-#slider{ height: 330px; }
+main.home{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr 2fr;
+    row-gap: 20px;
+    grid-template-areas: 
+        "slider"
+        "inicio"
+        "personagens"
+    ;
+}
+
+#slider{
+    grid-area: slider;
+    height: 100%;
+}
 #slider .slide{
     background: black;
-    height: 330px;
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -113,6 +128,7 @@ a:hover{
 }
 
 #inicio{
+    grid-area: inicio;
     padding: 60px 0;
     text-align: center;
 }
@@ -238,6 +254,7 @@ a:hover{
 
 /*** PERSONAGENS ***/
 #personagens{
+    grid-area: personagens;
     padding: 40px 0;
     text-align: center;
 }
