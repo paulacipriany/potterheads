@@ -11,7 +11,7 @@ body{
 }
 
 a:hover{
-    transition: color 5s;
+    transition: color 3s;
 }
 
 #header .menu, #footer .wrapper, #slider, #inicio, #personagens, #mapa, #lista, #banner, #info, #localizacao, #cena, #intro, #bio, #locais, #filmes, #contato{
