@@ -1,147 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Harry Potter, Filmes, Livros, Personagens, Wiki, Fanbase">
-    <meta name="description" content="Site sobre as locaçoes do universo Harry Potter">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="estilo.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Harry Potter, Filmes, Livros, Personagens, Wiki, Fanbase">
+        <meta name="description" content="Site sobre as locaçoes do universo Harry Potter">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <title>Harry Potter - Home</title>
-</head>
-<body>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="estilo.css">
 
-    <header id="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo do site">
-            </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li class="active">
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="mapa.html">Mapa</a>
-                </li>
-                <li>
-                    <a href="personagens.html">Personagens</a>
-                </li>
-                <li>
-                    <a href="filmes.html">Filmes</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <title>Harry Potter - Home</title>
+    </head>
+    <body>
 
-    <main class="home">
+        <header id="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo do site">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personagens.html">Personagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="filmes.html">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <section id="slider">
-            <div class="slide">
-                <img src="img/banner.png" alt="Imagem Piccadilly Circus">
-                <div class="info">
-                    <a href="mapa-local.html">
-                        <strong>Piccadily Circus</strong><br />
-                        Londres WIJ 9HP, Reino Unido<br />
-                        <span>Harry Potter e as Relíquias da Morte I</span>
+        <main class="home">
+
+            <section id="carrossel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/banner.png" class="d-block w-100" alt="Piccadily Circus">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="mapa-local.html">
+                                    <strong>Piccadily Circus</strong><br />
+                                    Londres WIJ 9HP, Reino Unido<br />
+                                    <span>Harry Potter e as Relíquias da Morte I</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/banner.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="mapa-local.html">
+                                    <strong>Piccadily Circus</strong><br />
+                                    Londres WIJ 9HP, Reino Unido<br />
+                                    <span>Harry Potter e as Relíquias da Morte I</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/banner.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="mapa-local.html">
+                                    <strong>Piccadily Circus</strong><br />
+                                    Londres WIJ 9HP, Reino Unido<br />
+                                    <span>Harry Potter e as Relíquias da Morte I</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
                     </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="inicio">
+                <div class="container">
+                    <h1>Descubra os cenários do universo Harry Potter</h1>
+                    <img class="seta" src="img/seta.png" alt="Seta para baixo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582284.298941974!2d-15.020883926043918!3d54.10167163173951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1695417571423!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section id="personagens">
+                <div class="container">
+                    <h2>Personagens</h2>
+                    <div class="wrapper">
+                        <div class="item">
+                            <a href="single-personagem.html">
+                                <img src="img/personagem-01.png" alt="Foto do personagem">
+                                <span>Harry Potter</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="single-personagem.html">
+                                <img src="img/personagem-02.png" alt="Foto do personagem">
+                                <span>Luna Lovegood</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="single-personagem.html">
+                                <img src="img/personagem-03.png" alt="Foto do personagem">
+                                <span>Severus Snape</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="links">
+                        <li>
+                            <a href="mapa.html">Mapa</a>
+                            <ul>
+                                <li><a href="mapa-local.html">Piccadilly Circus</a></li>
+                                <li><a href="mapa-local.html">Millenium Bridge</a></li>
+                                <li><a href="mapa-local.html">London Eye</a></li>
+                                <li><a href="mapa-local.html">King's Cross Station</a></li>
+                                <li><a href="mapa-local.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="links">
+                        <li>
+                            <a href="personagens.html">Personagens</a>
+                            <ul>
+                                <li><a href="single-personagem.html">Harry Potter</a></li>
+                                <li><a href="single-personagem.html">Hermione Granger</a></li>
+                                <li><a href="single-personagem.html">Ronald Weasley</a></li>
+                                <li><a href="single-personagem.html">Neville Longbottom</a></li>
+                                <li><a href="single-personagem.html">Luna Lovegood</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="links">
+                        <li>
+                            <a href="filmes.html">Filmes</a>
+                            <ul>
+                                <li><a href="single-filme.html">HP e a Pedra Filosofal</a></li>
+                                <li><a href="single-filme.html">HP e a Camara Secreta</a></li>
+                                <li><a href="single-filme.html">HP e o Prisioneiro de Azkaban</a></li>
+                                <li><a href="single-filme.html">HP e o Cálice de Fogo</a></li>
+                                <li><a href="single-filme.html">HP e a Ordem da Fenix</a></li>
+                                <li><a href="single-filme.html">HP e o Enigma do Príncipe</a></li>
+                                <li><a href="single-filme.html">HP e as Relíquias da Morte I</a></li>
+                                <li><a href="single-filme.html">HP e as Relíquias da Morte II</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="links">
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </footer>
 
-        <section id="inicio">
-            <h1>Descubra os cenários do universo Harry Potter</h1>
-            <img class="seta" src="img/seta.png" alt="Seta para baixo">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582284.298941974!2d-15.020883926043918!3d54.10167163173951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1695417571423!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
-        <section id="personagens">
-            <h2>Personagens</h2>
-            <div class="wrapper">
-                <div class="item">
-                    <a href="single-personagem.html">
-                        <img src="img/personagem-01.png" alt="Foto do personagem">
-                        <span>Harry Potter</span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="single-personagem.html">
-                        <img src="img/personagem-02.png" alt="Foto do personagem">
-                        <span>Luna Lovegood</span>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="single-personagem.html">
-                        <img src="img/personagem-03.png" alt="Foto do personagem">
-                        <span>Severus Snape</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="footer">
-        <div class="wrapper">
-            <ul class="links">
-                <li>
-                    <a href="mapa.html">Mapa</a>
-                    <ul>
-                        <li><a href="mapa-local.html">Piccadilly Circus</a></li>
-                        <li><a href="mapa-local.html">Millenium Bridge</a></li>
-                        <li><a href="mapa-local.html">London Eye</a></li>
-                        <li><a href="mapa-local.html">King's Cross Station</a></li>
-                        <li><a href="mapa-local.html">Liverpool</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="links">
-                <li>
-                    <a href="personagens.html">Personagens</a>
-                    <ul>
-                        <li><a href="single-personagem.html">Harry Potter</a></li>
-                        <li><a href="single-personagem.html">Hermione Granger</a></li>
-                        <li><a href="single-personagem.html">Ronald Weasley</a></li>
-                        <li><a href="single-personagem.html">Neville Longbottom</a></li>
-                        <li><a href="single-personagem.html">Luna Lovegood</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="links">
-                <li>
-                    <a href="filmes.html">Filmes</a>
-                    <ul>
-                        <li><a href="single-filme.html">HP e a Pedra Filosofal</a></li>
-                        <li><a href="single-filme.html">HP e a Camara Secreta</a></li>
-                        <li><a href="single-filme.html">HP e o Prisioneiro de Azkaban</a></li>
-                        <li><a href="single-filme.html">HP e o Cálice de Fogo</a></li>
-                        <li><a href="single-filme.html">HP e a Ordem da Fenix</a></li>
-                        <li><a href="single-filme.html">HP e o Enigma do Príncipe</a></li>
-                        <li><a href="single-filme.html">HP e as Relíquias da Morte I</a></li>
-                        <li><a href="single-filme.html">HP e as Relíquias da Morte II</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul class="links">
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </div>
-
-    </footer>
-
-</body>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>

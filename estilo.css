@@ -14,11 +14,6 @@ a:hover{
     transition: color 2s;
 }
 
-#header .menu, #footer .wrapper, #mapa, #lista, #banner, #info, #localizacao, #cena, #intro, #bio, #locais, #filmes, #contato{
-    margin: 0 auto;
-    max-width: 70rem;
-}
-
 #banner img{ width: 100%; }
 
 /*** HEADER ***/
@@ -26,7 +21,7 @@ a:hover{
     background-image: linear-gradient(to bottom, #1C293A, transparent);
     border-top: 4px solid white;
     font-family: 'Inter', sans-serif;
-    height: 200px;
+    height: 250px;
     padding: 50px 0 0;
 }
 #header .logo{
@@ -40,17 +35,12 @@ a:hover{
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-#header .menu ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-#header .menu li{ display: inline-block; }
 #header .menu a{
     color: white;
     text-decoration: none;
 }
 #header .menu a:hover{ color: #F2DA59; }
-#header .menu .active a{ color: #F2DA59; }
+#header .menu .active{ color: #F2DA59; }
 
 /*** FOOTER ***/
 #footer{
@@ -78,57 +68,36 @@ a:hover{
 #footer ul.links a:hover{ color: #F2DA59; }
 
 /*** HOMEPAGE ***/
-main.home{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 3fr 2fr;
-    row-gap: 20px;
-    grid-template-areas: 
-        "slider"
-        "inicio"
-        "personagens"
-    ;
-}
 
-#slider{
-    grid-area: slider;
-    height: 100%;
-}
-#slider .slide{
+#carrossel .carousel-item{
     background: black;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
 }
-#slider .slide img{
-    opacity: 0.5;
-    position: absolute;
+#carrossel .carousel-item img{
+    opacity: 0.7;
     width: 100%;
 }
-#slider .slide .info{
+#carrossel .carousel-item .carousel-caption{
     font-size: 30px;
     font-weight: 600;
     left: 40px;
     line-height: 38px;
-    position: absolute;
-    top: 50%;
+    text-align: left;
 }
-#slider .slide .info a{
+#carrossel .carousel-item .carousel-caption a{
     color: white;
     text-decoration: none;
 }
-#slider .slide .info a:hover{ color: #F2DA59; }
-#slider .slide .info strong{
+#carrossel .carousel-item .carousel-caption a:hover{ color: #F2DA59; }
+#carrossel .carousel-item .carousel-caption strong{
     font-size: 36px;
     font-weight: 900;
 }
-#slider .slide .info span{
+#carrossel .carousel-item .carousel-caption span{
     font-size: 20px;
     text-decoration: underline;
 }
 
 #inicio{
-    grid-area: inicio;
     padding: 60px 0;
     text-align: center;
 }
@@ -254,7 +223,6 @@ main.home{
 
 /*** PERSONAGENS ***/
 #personagens{
-    grid-area: personagens;
     padding: 40px 0;
     text-align: center;
 }
@@ -369,10 +337,12 @@ main.home{
 #intro.filme{ text-align: center; }
 
 #filmes{
+    padding: 20px 0;
+}
+#filmes .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 0;
 }
 #filmes .item{
     font-size: 20px;
