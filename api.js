@@ -1,4 +1,4 @@
-let apiBaseUrl = 'https://hp-api.onrender.com/api'
+let apiBaseUrl = 'https://harry-potter-api-en.onrender.com'
 
 let mainPersonagens = document.getElementById('boxpersonagens');
 
@@ -29,17 +29,17 @@ function exibirPersonagens(response){
         personagemInfoContainer.className = 'personagemInfo';
 
         let personagemName = document.createElement('h3');
-        personagemName.innerText = personagem.name;
+        personagemName.innerText = personagem.character;
 
-        let personagemNascimento = document.createElement('p');
-        personagemNascimento.innerText = `Nascimento: ${personagem.dateOfBirth}`;
+        let personagemAtor = document.createElement('p');
+        personagemAtor.innerText = `(${personagem.interpretedBy})`;
 
         let personagemCasa = document.createElement('p');
         personagemCasa.className = 'personagemCasa';
-        personagemCasa.innerText = personagem.house;
+        personagemCasa.innerText = personagem.hogwartsHouse;
 
         containerImage.append(personagemImage);
-        personagemInfoContainer.append(personagemName, personagemNascimento, personagemCasa);
+        personagemInfoContainer.append(personagemName, personagemAtor, personagemCasa);
         container.append(containerImage, personagemInfoContainer);
         mainPersonagens.append(container);
 
