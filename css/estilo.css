@@ -10,7 +10,7 @@
 }
 
 body{
-    /* background: black url(img/bg2.jpeg) repeat center center; */
+    background: black url(../img/bg2.jpeg) repeat center center;
     background-color: #000000;
     color: white;
     font-family: "sofia-pro", sans-serif;
@@ -24,14 +24,24 @@ h1, h2, h3, h4, h5, h6{
     font-family: BluuNext, serif;
 }
 
-#banner img{ width: 100%; }
+#banner img{
+  position:relative;
+  z-index:-1;
+  display:block;
+  width: 100%;
+}
+
+#banner {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 1.1))
+}
 
 /*** HEADER ***/
 #header{
     background-image: linear-gradient(to bottom, #1C293A, transparent);
-    border-top: 4px solid white;
     height: 250px;
     padding: 50px 0 0;
+    position: relative;
+    z-index: 99999;
 }
 #header .logo{
     margin-bottom: 40px;
@@ -53,14 +63,16 @@ h1, h2, h3, h4, h5, h6{
 
 /*** FOOTER ***/
 #footer{
-    background-image: linear-gradient(to top, #1C293A, transparent);
+    /* background-image: linear-gradient(to top, #1C293A, transparent); */
     clear: both;
     font-size: 16px;
-    padding: 80px 0 40px;
+    padding: 80px 0 0px;
+    position: relative;
+    z-index: 99999;
 }
-#footer .wrapper{
-    display: flex;
-    justify-content: space-between;
+#footer .container{
+    border-top: #919191 solid 1px;
+    padding: 50px 50px;
 }
 #footer ul.links{
     font-weight: 700;
@@ -77,7 +89,29 @@ h1, h2, h3, h4, h5, h6{
 #footer ul.links a{ color: white; }
 #footer ul.links a:hover{ color: #F2DA59; }
 
-
+/*** HEADER SINGLE ***/
+#header-single{
+  background-color: #10141B; 
+  height: 250px;
+  padding: 50px 0 0;
+}
+#header-single .logo{
+  margin-bottom: 40px;
+  text-align: center;
+}
+#header-single .logo a{ display: inline-block; }
+#header-single .menu{
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#header-single .menu a{
+  color: white;
+  text-decoration: none;
+}
+#header-single .menu a:hover{ color: #F2DA59; }
+#header-single .menu .active{ color: #F2DA59; }
 
 /*** HOMEPAGE ***/
 
@@ -123,6 +157,23 @@ h1, h2, h3, h4, h5, h6{
 #inicio img.seta{
     display: block;
     margin: 0 auto 30px auto;
+}
+
+#inicio .btn-default{
+  background-color: #fff;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 30px;
+  transition: 0.5s;
+  text-decoration: none;
+  display: inline-block; 
+}
+#inicio .btn-default:hover {
+  background-color: #F2DA59;
 }
 
 /*  SETA  */
@@ -177,22 +228,28 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*** MAPA ***/
+
 #mapa{
-    padding: 60px 0 40px;
-    text-align: center;
+  padding: 200px 0;
+  margin: 0px 0;
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 1.1)),
+  url('../img/mapa-cover-01.jpg');
+  background-size: cover;
+  width: 100%;
 }
 #mapa h1{
-    font-size: 40px;
-    font-weight: 900;
-    margin-bottom: 35px;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
 #mapa p{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 50px;
+  font-size: 20px;
+  line-height: 28px;
 }
-
+#mapa-embed{
+  margin: -100px 0 0;
+}
 #lista{ padding: 40px 0 60px; }
 #lista h2{
     font-size: 32px;
@@ -211,12 +268,14 @@ h1, h2, h3, h4, h5, h6{
 #lista ul{
     font-size: 16px;
     font-weight: 500;
+    margin: 0;
     line-height: 40px;
+    list-style-position: inside;
 }
 #lista ul li a{ color: white; }
 #lista ul li a:hover{ color: #F2DA59; }
 
-#info{ padding: 20px 0 0; }
+#info{ padding: 20px 0 0; margin-top: -300px;}
 #info h1{
     font-size: 40px;
     font-weight: 900;
@@ -286,7 +345,7 @@ h1, h2, h3, h4, h5, h6{
 
 /*** PERSONAGENS ***/
 #personagens{
-    padding: 40px 0;
+    padding: 0 0;
     text-align: center;
 }
 #personagens h2, #personagens h4{
@@ -339,15 +398,23 @@ h1, h2, h3, h4, h5, h6{
 #personagens.page .wrapper{ flex-wrap: wrap; }
 #personagens.page .item{ margin-bottom: 30px;}
 
-#intro{
-    padding: 20px 0;
+.personagemInfo h3{ margin: 0; font-size: 28px; }
+.personagemInfo .personagemCasa{ font-size: 19px; }
+
+#intro-personagens{
+    padding: 200px 0;
+    margin: 0px 0 -100px 0;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 1.1)),
+    url('../img/personagens-cover-01.jpg');
+    background-size: cover;
 }
-#intro h1{
+#intro-personagens h1{
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 30px;
 }
-#intro p{
+#intro-personagens p{
     font-size: 20px;
     line-height: 28px;
 }
@@ -409,10 +476,29 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*** FILMES ***/
-#intro.filme{ text-align: center; }
+
+#intro-filmes{
+  padding: 200px 0;
+  margin: 0px 0;
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 1.1)),
+  url('../img/filmes-cover-01.webp');
+  background-size: cover;
+}
+#intro-filmes h1{
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+#intro-filmes p{
+  font-size: 20px;
+  line-height: 28px;
+}
+#intro.filmes{ text-align: center; }
 
 #filmes{
     padding: 20px 0;
+    margin: -100px 0 0;
 }
 #filmes .wrapper{
     display: flex;
@@ -441,7 +527,7 @@ h1, h2, h3, h4, h5, h6{
     text-decoration: none;
 }
 
-#info.filme{ clear: both; }
+#info.filme{ clear: both;     margin: -200px 0 0;}
 #info.filme img{ float: left; width: 23%; }
 #info.filme p{ float: right; margin: 0; width: 75%; }
 
@@ -1861,6 +1947,7 @@ h1, h2, h3, h4, h5, h6{
   #stars2 {
     width: 2px;
     height: 2px;
+    position: absolute;
     background: transparent;
     box-shadow: 732px 1913px #FFF , 1436px 36px #FFF , 1394px 649px #FFF , 1448px 1728px #FFF , 1710px 1250px #FFF , 136px 1671px #FFF , 557px 1317px #FFF , 1038px 1524px #FFF , 400px 210px #FFF , 195px 145px #FFF , 805px 1407px #FFF , 1406px 642px #FFF , 37px 398px #FFF , 1047px 731px #FFF , 1902px 1561px #FFF , 1278px 693px #FFF , 709px 1375px #FFF , 1368px 705px #FFF , 1250px 191px #FFF , 1715px 1736px #FFF , 1074px 1980px #FFF , 750px 1688px #FFF , 882px 234px #FFF , 914px 1381px #FFF , 1515px 857px #FFF , 1204px 1133px #FFF , 1905px 299px #FFF , 415px 1580px #FFF , 1778px 1892px #FFF , 1497px 592px #FFF , 992px 1053px #FFF , 1851px 779px #FFF , 1380px 304px #FFF , 316px 495px #FFF , 558px 252px #FFF , 777px 338px #FFF , 928px 1351px #FFF , 680px 1823px #FFF , 1762px 974px #FFF , 1619px 737px #FFF , 286px 615px #FFF , 1593px 1363px #FFF , 1820px 946px #FFF , 1167px 940px #FFF , 1645px 1141px #FFF , 1473px 1653px #FFF , 1761px 1810px #FFF , 1866px 20px #FFF , 830px 1550px #FFF , 687px 95px #FFF , 1181px 1563px #FFF , 661px 1127px #FFF , 848px 65px #FFF , 1288px 1903px #FFF , 649px 1030px #FFF , 563px 1838px #FFF , 1191px 1890px #FFF , 552px 452px #FFF , 1967px 184px #FFF , 1034px 400px #FFF , 127px 1604px #FFF , 542px 248px #FFF , 1365px 701px #FFF , 26px 956px #FFF , 554px 1392px #FFF , 795px 912px #FFF , 923px 604px #FFF , 1792px 1264px #FFF , 115px 1163px #FFF , 344px 9px #FFF , 943px 992px #FFF , 1296px 1836px #FFF , 879px 781px #FFF , 1875px 1371px #FFF , 613px 1851px #FFF , 575px 1137px #FFF , 1956px 1009px #FFF , 1177px 1890px #FFF , 1706px 1197px #FFF , 1803px 376px #FFF , 367px 543px #FFF , 298px 1089px #FFF , 558px 1074px #FFF , 767px 658px #FFF , 763px 1486px #FFF , 1694px 1679px #FFF , 1243px 1981px #FFF , 791px 1910px #FFF , 1604px 1210px #FFF , 172px 767px #FFF , 1010px 568px #FFF , 1507px 1747px #FFF , 1036px 121px #FFF , 859px 1391px #FFF , 120px 1524px #FFF , 1328px 266px #FFF , 1146px 1760px #FFF , 1468px 1114px #FFF , 363px 666px #FFF , 1997px 453px #FFF , 744px 1990px #FFF , 472px 724px #FFF , 562px 948px #FFF , 20px 950px #FFF , 271px 909px #FFF , 1612px 1062px #FFF , 399px 1221px #FFF , 775px 78px #FFF , 603px 50px #FFF , 128px 1954px #FFF , 29px 912px #FFF , 1839px 1524px #FFF , 216px 1223px #FFF , 730px 986px #FFF , 1442px 335px #FFF , 280px 1490px #FFF , 739px 1154px #FFF , 273px 1362px #FFF , 1424px 728px #FFF , 118px 584px #FFF , 1442px 251px #FFF , 1537px 155px #FFF , 1207px 899px #FFF , 939px 1382px #FFF , 1919px 732px #FFF , 1275px 810px #FFF , 1855px 940px #FFF , 1819px 532px #FFF , 1446px 29px #FFF , 450px 1454px #FFF , 394px 375px #FFF , 587px 71px #FFF , 890px 987px #FFF , 1682px 392px #FFF , 5px 1037px #FFF , 721px 524px #FFF , 1298px 1178px #FFF , 839px 838px #FFF , 1045px 1542px #FFF , 392px 353px #FFF , 405px 1653px #FFF , 536px 962px #FFF , 1089px 1925px #FFF , 30px 136px #FFF , 178px 1039px #FFF , 1456px 1353px #FFF , 1131px 1153px #FFF , 1004px 599px #FFF , 1978px 1375px #FFF , 31px 1881px #FFF , 488px 1188px #FFF , 1809px 744px #FFF , 1218px 112px #FFF , 1633px 866px #FFF , 218px 1194px #FFF , 1006px 1054px #FFF , 1503px 1310px #FFF , 44px 1100px #FFF , 1046px 11px #FFF , 1476px 1124px #FFF , 445px 1510px #FFF , 877px 463px #FFF , 113px 130px #FFF , 200px 81px #FFF , 194px 913px #FFF , 993px 1917px #FFF , 929px 1856px #FFF , 1042px 461px #FFF , 1124px 75px #FFF , 1938px 55px #FFF , 1922px 448px #FFF , 191px 1150px #FFF , 1795px 396px #FFF , 1673px 85px #FFF , 868px 577px #FFF , 1923px 1472px #FFF , 111px 318px #FFF , 670px 567px #FFF , 1978px 834px #FFF , 1877px 203px #FFF , 714px 1461px #FFF , 651px 1529px #FFF , 929px 779px #FFF , 418px 1275px #FFF , 1251px 842px #FFF , 552px 1316px #FFF , 605px 1534px #FFF , 818px 797px #FFF , 788px 502px #FFF , 1117px 1153px #FFF , 1950px 1401px #FFF , 1852px 1086px #FFF , 1828px 893px #FFF , 330px 559px #FFF , 1616px 232px #FFF , 1114px 96px #FFF , 778px 1016px #FFF , 133px 1874px #FFF , 1441px 1634px #FFF , 1144px 769px #FFF;
     animation: animStar 800s linear infinite;
@@ -1907,4 +1994,39 @@ h1, h2, h3, h4, h5, h6{
       to {
         transform: translateY(2000px);
       }
+  }
+
+  /* RESPONSIVE - MOBILE */
+  @media screen and (max-width: 39.9375em) {
+
+    #header, #header-single{ height: 300px; }
+    #header .logo, #header-single .logo{ margin-bottom: 20px; }
+
+    #footer{ padding: 50px 0 0 0; }
+
+    .container-arrow{ margin-bottom: 40px; }
+    #inicio h1{ font-size: 32px; }
+
+    #mapa{ padding: 100px 0; }
+    #mapa h1 { font-size: 34px; }
+    #lista { padding: 40px 0px 20px; }
+
+    #info{ margin: 0; }
+    #info h1{ font-size: 36px;}
+    #info strong{ font-size: 26px; }
+    #info span { font-size: 22px; }
+    #info a{ font-size: 18px; }
+    #info p { font-size: 18px; line-height: 26px; }
+    #localizacao .endereco{ margin: 0; }
+    #localizacao .endereco p { font-size: 20px; line-height: 28px; }
+
+    #personagens .item { width: 48%; }
+    #personagens .item .boxImage{ height: auto; }
+
+    #filmes .wrapper{ gap: initial; justify-content: space-between; }
+    #filmes .item{ width: 48%; }
+    #info.filme{ margin: 0; }
+    #info.filme img{ width: 100%; }
+    #info.filme p{ margin-top: 20px; width: 100%; }
+
   }

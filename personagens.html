@@ -6,19 +6,22 @@
         <meta name="keywords" content="Harry Potter, Filmes, Livros, Personagens, Wiki, Fanbase">
         <meta name="description" content="Site sobre as locaçoes do universo Harry Potter">
         
+
+        <link rel="stylesheet" href="https://use.typekit.net/vaz6hxo.css">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Young+Serif&family=Lexend:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="css/estilo.css">
 
         <title>Harry Potter - Personagens</title>
     </head>
     <body>
 
-        <header id="header">
+        <header id="header-single">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo do site">
@@ -28,6 +31,9 @@
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mapa.html">Mapa</a>
@@ -47,9 +53,6 @@
 
         <main>
 
-            <div id='stars'></div>
-            <!-- <div id='stars2'></div>
-            <div id='stars3'></div> -->
             <div class="firefly"></div>
             <div class="firefly"></div>
             <div class="firefly"></div>
@@ -66,7 +69,7 @@
             <div class="firefly"></div>
             <div class="firefly"></div>
 
-            <section id="intro">
+            <section id="intro-personagens">
                 <div class="container">
                     <h1>Personagens</h1>
                     <p>A saga Harry Potter e seus inúmeros personagens encantam o mundo desde que o primeiro livro da franquia foi lançado, em junho de 1997. Ao todo, foram sete livros escritos pela autora J. K. Rowling, todos com um sucesso fenomenal de vendas, o que fez com que a série se tornasse a best-seller da história. Diversos fatores podem contribuir para esse êxito, mas com certeza, a complexidade e singularidade dos personagens é um dos motivos pelo qual a saga é tão popular. Por isso, preparamos uma lista com os personagens mais importantes de Harry Potter – e o porque eles ajudaram a tornar essa história ainda mais especial.</p>
@@ -85,51 +88,59 @@
 
         <footer id="footer">
             <div class="container">
-                <div class="wrapper">
-                    <ul class="links">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="personagens.html">Personagens</a>
-                        </li>
-                        <li>
-                            <a href="contato.html">Contato</a>
-                        </li>
-                    </ul>
-                    <ul class="links">
-                        <li>
-                            <a href="mapa.html">Mapa</a>
-                            <ul>
-                                <li><a href="mapa-local.html">Piccadilly Circus</a></li>
-                                <li><a href="mapa-local.html">Millenium Bridge</a></li>
-                                <li><a href="mapa-local.html">London Eye</a></li>
-                                <li><a href="mapa-local.html">King's Cross Station</a></li>
-                                <li><a href="mapa-local.html">Liverpool</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="links">
-                        <li>
-                            <a href="filmes.html">Filmes</a>
-                            <ul>
-                                <li><a href="filme-01.html">HP e a Pedra Filosofal</a></li>
-                                <li><a href="filme-02.html">HP e a Camara Secreta</a></li>
-                                <li><a href="filme-03.html">HP e o Prisioneiro de Azkaban</a></li>
-                                <li><a href="filme-04.html">HP e o Cálice de Fogo</a></li>
-                                <li><a href="filme-05.html">HP e a Ordem da Fenix</a></li>
-                                <li><a href="filme-06.html">HP e o Enigma do Príncipe</a></li>
-                                <li><a href="filme-07.html">HP e as Relíquias da Morte I</a></li>
-                                <li><a href="filme-08.html">HP e as Relíquias da Morte II</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-sm">
+                        <ul class="links">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="personagens.html">Personagens</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul class="links">
+                            <li>
+                                <a href="mapa.html">Mapa</a>
+                                <ul>
+                                    <li><a href="mapa-local.html">Piccadilly Circus</a></li>
+                                    <li><a href="mapa-local.html">Millenium Bridge</a></li>
+                                    <li><a href="mapa-local.html">London Eye</a></li>
+                                    <li><a href="mapa-local.html">King's Cross Station</a></li>
+                                    <li><a href="mapa-local.html">Liverpool</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul class="links">
+                            <li>
+                                <a href="filmes.html">Filmes</a>
+                                <ul>
+                                    <li><a href="filme-01.html">HP e a Pedra Filosofal</a></li>
+                                    <li><a href="filme-02.html">HP e a Camara Secreta</a></li>
+                                    <li><a href="filme-03.html">HP e o Prisioneiro de Azkaban</a></li>
+                                    <li><a href="filme-04.html">HP e o Cálice de Fogo</a></li>
+                                    <li><a href="filme-05.html">HP e a Ordem da Fenix</a></li>
+                                    <li><a href="filme-06.html">HP e o Enigma do Príncipe</a></li>
+                                    <li><a href="filme-07.html">HP e as Relíquias da Morte I</a></li>
+                                    <li><a href="filme-08.html">HP e as Relíquias da Morte II</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
 
-        <script src="api.js"></script>
+        <script src="js/api.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

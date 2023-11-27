@@ -12,13 +12,13 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="css/estilo.css">
 
         <title>Harry Potter - Mapa: King's Cross Station</title>
     </head>
     <body>
 
-        <header id="header">
+        <header id="header-single">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo do site">
@@ -28,6 +28,9 @@
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="mapa.html">Mapa</a>
@@ -47,9 +50,6 @@
 
         <main>
 
-            <div id='stars'></div>
-            <!-- <div id='stars2'></div>
-            <div id='stars3'></div> -->
             <div class="firefly"></div>
             <div class="firefly"></div>
             <div class="firefly"></div>
@@ -84,7 +84,9 @@
             <section id="localizacao">
                 <div class="container">
                     <h2>Localização</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582284.298941974!2d-15.020883926043918!3d54.10167163173951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sReino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1695417571423!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <div style="height:700px; width:100%; display:inline-block; overflow:hidden;">
+                        <iframe class="custom-google-map" style="position:relative; top:-100px; border:none;" src="https://www.google.com/maps/d/embed?mid=1nU4UIR-G0Qwl5NGxDjCo5AYZkW-XrQk&ehbc=2E312F/place?key=AIzaSyCp0etZ96AOl0wpAm2p50XShycpVSfOBYw&center=53.40451,-2.99411&zoom=21" width="100%" height="745"></iframe>
+                    </div>
                     <div class="endereco">
                         <p><b>Estação King’s Cross:</b><br />
                         Euston Rd., London N1 9AL - Londres, Reino Unido.</p>
@@ -105,76 +107,58 @@
                 </div>
             </section>
 
-            <section id="personagens">
-                <div class="container">
-                    <h4>Personagens da cena</h4>
-                    <div class="wrapper">
-                        <div class="item">
-                            <a href="single-personagem.html">
-                                <img src="img/personagem-01.png" alt="Foto do personagem">
-                                <span>Harry Potter</span>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="single-personagem.html">
-                                <img src="img/personagem-02.png" alt="Foto do personagem">
-                                <span>Luna Lovegood</span>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="single-personagem.html">
-                                <img src="img/personagem-03.png" alt="Foto do personagem">
-                                <span>Severus Snape</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </main>
 
         <footer id="footer">
             <div class="container">
-                <div class="wrapper">
-                    <ul class="links">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="personagens.html">Personagens</a>
-                        </li>
-                        <li>
-                            <a href="contato.html">Contato</a>
-                        </li>
-                    </ul>
-                    <ul class="links">
-                        <li>
-                            <a href="mapa.html">Mapa</a>
-                            <ul>
-                                <li><a href="mapa-local.html">Piccadilly Circus</a></li>
-                                <li><a href="mapa-local.html">Millenium Bridge</a></li>
-                                <li><a href="mapa-local.html">London Eye</a></li>
-                                <li><a href="mapa-local.html">King's Cross Station</a></li>
-                                <li><a href="mapa-local.html">Liverpool</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="links">
-                        <li>
-                            <a href="filmes.html">Filmes</a>
-                            <ul>
-                                <li><a href="filme-01.html">HP e a Pedra Filosofal</a></li>
-                                <li><a href="filme-02.html">HP e a Camara Secreta</a></li>
-                                <li><a href="filme-03.html">HP e o Prisioneiro de Azkaban</a></li>
-                                <li><a href="filme-04.html">HP e o Cálice de Fogo</a></li>
-                                <li><a href="filme-05.html">HP e a Ordem da Fenix</a></li>
-                                <li><a href="filme-06.html">HP e o Enigma do Príncipe</a></li>
-                                <li><a href="filme-07.html">HP e as Relíquias da Morte I</a></li>
-                                <li><a href="filme-08.html">HP e as Relíquias da Morte II</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-sm">
+                        <ul class="links">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="personagens.html">Personagens</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul class="links">
+                            <li>
+                                <a href="mapa.html">Mapa</a>
+                                <ul>
+                                    <li><a href="mapa-local.html">Piccadilly Circus</a></li>
+                                    <li><a href="mapa-local.html">Millenium Bridge</a></li>
+                                    <li><a href="mapa-local.html">London Eye</a></li>
+                                    <li><a href="mapa-local.html">King's Cross Station</a></li>
+                                    <li><a href="mapa-local.html">Liverpool</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul class="links">
+                            <li>
+                                <a href="filmes.html">Filmes</a>
+                                <ul>
+                                    <li><a href="filme-01.html">HP e a Pedra Filosofal</a></li>
+                                    <li><a href="filme-02.html">HP e a Camara Secreta</a></li>
+                                    <li><a href="filme-03.html">HP e o Prisioneiro de Azkaban</a></li>
+                                    <li><a href="filme-04.html">HP e o Cálice de Fogo</a></li>
+                                    <li><a href="filme-05.html">HP e a Ordem da Fenix</a></li>
+                                    <li><a href="filme-06.html">HP e o Enigma do Príncipe</a></li>
+                                    <li><a href="filme-07.html">HP e as Relíquias da Morte I</a></li>
+                                    <li><a href="filme-08.html">HP e as Relíquias da Morte II</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
